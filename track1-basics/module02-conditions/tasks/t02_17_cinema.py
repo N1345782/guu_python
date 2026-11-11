@@ -23,4 +23,13 @@
 """
 
 # TODO: прочитайте возраст и час, примените скидки и выведите итог
+age = int(input())
+hour = int(input())
 
+price = 300.0
+if age < 12:
+    price /= 2
+if hour < 18:
+    price *= 0.8
+
+print(round(price, 2))

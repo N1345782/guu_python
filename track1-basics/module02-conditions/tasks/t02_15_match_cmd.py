@@ -16,4 +16,12 @@
 """
 
 # TODO: прочитайте команду и обработайте её через match/case
+command = input()
 
+match command:
+    case "старт":
+        print("запуск")
+    case "стоп":
+        print("остановка")
+    case _:
+        print("неизвестная команда")

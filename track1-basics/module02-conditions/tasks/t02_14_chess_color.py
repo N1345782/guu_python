@@ -15,4 +15,10 @@
 """
 
 # TODO: прочитайте координаты и определите цвет клетки
+col = int(input())
+row = int(input())
 
+if (col + row) % 2 == 0:
+    print("белая")
+else:
+    print("чёрная")
