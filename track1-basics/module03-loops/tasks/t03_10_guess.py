@@ -24,4 +24,12 @@
 TARGET = 42
 
 # TODO: в цикле while читайте числа и выводите подсказки, пока не угадают
-
+while True:
+    x = int(input())
+    if x < 42:
+        print("больше")
+    elif x > 42:
+        print("меньше")
+    else:
+        print("угадал")
+        break

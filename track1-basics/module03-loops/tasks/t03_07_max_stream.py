@@ -24,3 +24,10 @@ n = int(input())
 
 # TODO: прочитайте n чисел в цикле и найдите наибольшее
 
+n = int(input())
+maximum = int(input())   # первое число — стартовый максимум
+for _ in range(n - 1):
+    x = int(input())
+    if x > maximum:
+        maximum = x
+print(maximum)
