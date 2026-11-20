@@ -17,4 +17,11 @@ True
 """
 
 # TODO: проверьте все три правила (пригодятся count и find)
+s = input()
 
+ok = s.count("@") == 1
+at = s.find("@")
+ok = ok and 0 < at < len(s) - 1
+ok = ok and "." in s[at + 1:]
+
+print(ok)

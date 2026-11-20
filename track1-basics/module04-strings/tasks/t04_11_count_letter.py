@@ -14,4 +14,10 @@
 """
 
 # TODO: прочитайте текст и букву, посчитайте вхождения
-
+text = input()
+letter = input()
+count = 0
+for ch in text:
+    if ch == letter:
+        count += 1
+print(count)

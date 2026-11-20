@@ -18,4 +18,8 @@ my.file.txt
 """
 
 # TODO: разделите строку справа по точке (rsplit) и выведите обе части
+s = input()
+name, ext = s.rsplit(".", 1)
+print(f"Имя: {name}")
+print(f"Расширение: {ext}")
 
