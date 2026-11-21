@@ -14,4 +14,11 @@
 """
 
 # TODO: соберите список без повторов и выведите его
+nums = [int(x) for x in input().split()]
 
+unique = []
+for x in nums:
+    if x not in unique:
+        unique.append(x)
+
+print(" ".join(str(x) for x in unique))

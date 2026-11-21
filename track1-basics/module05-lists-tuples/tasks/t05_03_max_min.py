@@ -20,4 +20,15 @@
 """
 
 # TODO: найдите максимум и минимум перебором
+nums = [int(x) for x in input().split()]
 
+maximum = nums[0]
+minimum = nums[0]
+for x in nums[1:]:
+    if x > maximum:
+        maximum = x
+    if x < minimum:
+        minimum = x
+
+print(f"Максимум: {maximum}")
+print(f"Минимум: {minimum}")

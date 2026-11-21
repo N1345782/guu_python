@@ -14,3 +14,12 @@ True
 
 # TODO: переберите соседние пары (a[i] и a[i+1]) и сравните
 
+nums = [int(x) for x in input().split()]
+
+found = False
+for i in range(len(nums) - 1):
+    if nums[i] == nums[i + 1]:
+        found = True
+        break
+
+print(found)

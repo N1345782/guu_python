@@ -14,4 +14,9 @@
 """
 
 # TODO: соберите чётные числа в новый список и выведите его
-
+nums = [int(x) for x in input().split()]
+evens = []
+for x in nums:
+    if x % 2 == 0:
+        evens.append(x)
+print(" ".join(str(x) for x in evens))

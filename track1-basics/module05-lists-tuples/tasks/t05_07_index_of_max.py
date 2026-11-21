@@ -13,4 +13,11 @@
 """
 
 # TODO: найдите индекс первого максимума (строгое сравнение >)
+nums = [int(x) for x in input().split()]
 
+best_index = 0
+for i in range(1, len(nums)):
+    if nums[i] > nums[best_index]:
+        best_index = i
+
+print(best_index)

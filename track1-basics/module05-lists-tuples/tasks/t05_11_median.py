@@ -20,3 +20,12 @@
 
 # TODO: отсортируйте список и найдите медиану
 
+nums = sorted(int(x) for x in input().split())
+n = len(nums)
+
+if n % 2 == 1:
+    median = nums[n // 2]
+else:
+    median = (nums[n // 2 - 1] + nums[n // 2]) / 2
+
+print(round(median, 2))

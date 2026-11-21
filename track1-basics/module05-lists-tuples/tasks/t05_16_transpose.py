@@ -20,3 +20,14 @@
 
 # TODO: прочитайте матрицу и выведите её столбцы как строки
 
+n = int(input())
+m = int(input())
+
+matrix = []
+for _ in range(n):
+    row = [int(x) for x in input().split()]
+    matrix.append(row)
+
+for j in range(m):
+    column = [matrix[i][j] for i in range(n)]
+    print(" ".join(str(x) for x in column))

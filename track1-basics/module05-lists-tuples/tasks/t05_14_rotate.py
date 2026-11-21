@@ -18,4 +18,8 @@
 """
 
 # TODO: соберите результат из двух срезов: последние k и всё остальное
+nums = input().split()
+k = int(input())
 
+result = nums[len(nums) - k:] + nums[:len(nums) - k]
+print(" ".join(result))

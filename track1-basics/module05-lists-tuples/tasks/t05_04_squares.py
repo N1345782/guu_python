@@ -19,4 +19,10 @@
 n = int(input())
 
 # TODO: соберите список квадратов и выведите через пробел
+n = int(input())
+squares = []
+for _ in range(n):
+    x = int(input())
+    squares.append(x * x)
 
+print(" ".join(str(s) for s in squares))

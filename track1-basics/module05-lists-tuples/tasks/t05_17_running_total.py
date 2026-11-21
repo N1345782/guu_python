@@ -14,3 +14,12 @@
 
 # TODO: накапливайте сумму и собирайте результаты
 
+nums = [int(x) for x in input().split()]
+
+result = []
+total = 0
+for x in nums:
+    total += x
+    result.append(total)
+
+print(" ".join(str(x) for x in result))

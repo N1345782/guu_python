@@ -18,4 +18,8 @@
 """
 
 # TODO: прочитайте матрицу в список строк и просуммируйте каждую
+nums = input().split()
+k = int(input())
 
+cut = len(nums) - k
+print(" ".join(nums[cut:] + nums[:cut]))

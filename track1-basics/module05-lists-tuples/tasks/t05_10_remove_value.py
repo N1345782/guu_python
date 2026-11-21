@@ -16,4 +16,12 @@
 """
 
 # TODO: соберите новый список без x и выведите его
+nums = [int(x) for x in input().split()]
+x = int(input())
 
+result = []
+for v in nums:
+    if v != x:
+        result.append(v)
+
+print(" ".join(str(v) for v in result))
